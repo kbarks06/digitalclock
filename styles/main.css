@@ -1,20 +1,51 @@
 
-
+*{
+    background-color: darkcyan;
+}
 header img{
-    max-width: 150px;
+    max-width: 50px;
+    padding-top: .25em;
+    padding-left: .25em;
+}
+
+header h2{
+    border-bottom: 3px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    padding-bottom: .5em;
+    padding-left: .5em;
+    color: white;
 }
 
 body{
     height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    margin: auto;
 }
 
 .digitalclock{
     display: flex;
     gap: .25em;
+    background-color: white;
+    padding: 0 .5em;
+}
+
+
+footer{
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+    padding-bottom: .5em;
+    color: white;
 }
