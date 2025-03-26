@@ -1,0 +1,20 @@
+
+
+header img{
+    max-width: 150px;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalclock{
+    display: flex;
+    gap: .25em;
+}
