@@ -1,6 +1,6 @@
 
-*{
-    background-color: darkcyan;
+html{
+    background-color: lightslategray;
 }
 header img{
     max-width: 50px;
@@ -22,7 +22,6 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-
 }
 
 main{
@@ -37,10 +36,20 @@ main{
 .digitalclock{
     display: flex;
     gap: .25em;
-    background-color: white;
     padding: 0 .5em;
 }
 
+.container{
+    color: white;
+    background-color: darkslategray;
+}
+
+#colon1{
+    display: flex;
+}
+#colon2{
+    display: flex;
+}
 
 footer{
     margin-top: auto;
@@ -49,3 +58,47 @@ footer{
     padding-bottom: .5em;
     color: white;
 }
+
+    @media only screen and (max-width: 479px){
+        header h2{
+            font-size: 70%;
+        }
+        
+        body{
+            height: 100vh;
+        }
+        main{
+            font-size: 150%;
+            padding: .5em .5em; 
+        }
+
+        .container{
+            padding-bottom: 1em;
+            padding-top: 1em;
+        }
+
+        .digitalclock{
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        #colon1{
+            display: none;
+        }
+        #colon2{
+            display: none;
+        }
+
+        #minutes{
+            border-top: 3px solid ;
+            border-bottom: 3px solid white;
+            padding: 2em 0;
+        }
+
+        footer{
+            border-top: 3px solid white;
+            padding-top: .25em;
+        }
+
+    }
